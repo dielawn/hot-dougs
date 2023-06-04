@@ -3,10 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+div {
+    display: none !important;
+  }
+  
 .landscape{
     width: 300px;
+    padding: 5px;
 }
 .portrait{
-    width: 300px;
+    width: 150px;
+    padding: 5px;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.flexRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.block{
+    display: block;
+}
+.hide{
+    display: none;
 }
