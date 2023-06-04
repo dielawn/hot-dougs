@@ -40,12 +40,17 @@ const formatDisplayHours = () => {
     let formatedHours = hours.replace(/,/g, "<br>")
     createElement(contentDiv, 'div', 'hoursDiv', 'hoursDiv', formatedHours)
 }
-
+const handleActiveTab = (tab) => {    
+    tab.style.backgroundColor = 'rgba(138, 35, 3, .9)'
+    tab.style.color = 'rgb(247, 187, 77)'
+}
 const viewHome = () => {
     console.log('viewHome')    
     contentDiv.innerHTML = ''
     //display
     generateTabButtons()
+    const homeBtn = document.getElementById('homeBtn')
+    handleActiveTab(homeBtn)
     createElement(contentDiv, 'div', 'pictureDiv', 'pictureDiv', '')
     const pictureDiv = document.getElementById('pictureDiv')
     addImage(pictureDiv, 9, images[9].type, images[9].name)
@@ -70,6 +75,8 @@ const viewMenu = () => {
     contentDiv.innerHTML = ''
     //display
     generateTabButtons()
+    const menuBtn = document.getElementById('menuBtn')
+    handleActiveTab(menuBtn)
     createElement(contentDiv, 'div', 'menuDiv', 'menuDiv', '')
     displayMenu()
 
@@ -79,6 +86,8 @@ const viewContact = () => {
     contentDiv.innerHTML = ''
     //display
     generateTabButtons()
+    const contactBtn = document.getElementById('contactBtn')
+    handleActiveTab(contactBtn)
     createElement(contentDiv, 'div', 'contactDiv', 'contactDiv', '');
     const contactDiv = document.getElementById('contactDiv')
     createElement(contactDiv, 'div', 'contactInfo', 'ownerInfo', contactInfo.owner)    
@@ -90,3 +99,4 @@ const viewContact = () => {
     addImage(contactDiv, 8, images[8].type, images[8].name)
 
 }
+

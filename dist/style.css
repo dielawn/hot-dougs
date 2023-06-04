@@ -18,7 +18,7 @@
 }
   
 .landscape{
-    width: 800px;
+    width: 700px;
     padding: 5px;
 }
 .portrait{
@@ -37,8 +37,8 @@ button{
     background-color: rgb(247, 187, 77);
     border: solid 4px   rgba(138, 35, 3, 0.685);
     border-radius: 10px;
-    margin: 5px;
-    width: 300px;
+    margin: 5px 5px 0 5px;
+    width: 275px;
     height: 25px;
     color:  rgba(138, 35, 3, 0.685);
     font-weight: 900;
@@ -100,6 +100,7 @@ button{
 .buttonDiv{
     display: flex;
     justify-content: center;
+    
 }
 .entreDiv{
     display: flex;
