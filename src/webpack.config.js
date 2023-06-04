@@ -8,6 +8,7 @@ module.exports = {
     images: './images.js',
     menu: './menu.js',
     info: './businessInfo.js',
+    
   },
   output: {
     filename: '[name].bundle.js',

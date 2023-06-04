@@ -49,9 +49,12 @@ export const menu = [
         id: 'beer'
     },
 ]
+
 import createElement from './createElement.js';
 import {images, addImage} from './images.js'
-export const displayMenu = () => {
+
+
+export const displayMenu = () => {    
     for (let i = 0; i < menu.length; i++) {
       let header = menu[i].name;
       let itemId = menu[i].id
@@ -79,4 +82,6 @@ export const displayMenu = () => {
       }
     }
   };
+
+ 
 

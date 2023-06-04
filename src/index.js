@@ -5,32 +5,33 @@ import {images, addImage} from './images.js'
 import createElement from './createElement.js';
 
 
+
+
 //Top of the page
 const contentDiv = document.getElementById('content')
 const generateTabButtons = () => {
     //tab logic home, menu, contact
     createElement(contentDiv, 'div', 'buttonDiv', 'buttonDiv', '')
-    const buttonDiv = document.getElementById('buttonDiv')
+        const buttonDiv = document.getElementById('buttonDiv')
+
     createElement(buttonDiv, 'button', 'btn', 'homeBtn', 'Home')
-    const homeBtn = document.getElementById('homeBtn')
-    homeBtn.addEventListener('click', () => {
-    
-    console.log('home')
-    viewHome()
-    
-})
-createElement(buttonDiv, 'button', 'btn', 'menuBtn', 'Menu')
-    const menuBtn = document.getElementById('menuBtn')
-    menuBtn.addEventListener('click', () => {
-    console.log('menu')
-    viewMenu()
-})
-createElement(buttonDiv, 'button', 'btn', 'contactBtn', 'Contact')
-    const contactBtn = document.getElementById('contactBtn')
-    contactBtn.addEventListener('click', () => {
-    console.log('contact')
-    viewContact()
-})
+        const homeBtn = document.getElementById('homeBtn')
+        homeBtn.addEventListener('click', () => {    
+        console.log('home')
+        viewHome()    
+    })
+    createElement(buttonDiv, 'button', 'btn', 'menuBtn', 'Menu')
+        const menuBtn = document.getElementById('menuBtn')
+        menuBtn.addEventListener('click', () => {
+        console.log('menu')
+        viewMenu()
+    })
+    createElement(buttonDiv, 'button', 'btn', 'contactBtn', 'Contact')
+        const contactBtn = document.getElementById('contactBtn')
+        contactBtn.addEventListener('click', () => {
+        console.log('contact')
+        viewContact()
+    })
 }
 
 
@@ -44,7 +45,9 @@ const handleActiveTab = (tab) => {
     tab.style.backgroundColor = 'rgba(138, 35, 3, .9)'
     tab.style.color = 'rgb(247, 187, 77)'
 }
+
 const viewHome = () => {
+    
     console.log('viewHome')    
     contentDiv.innerHTML = ''
     //display
@@ -68,9 +71,8 @@ const viewHome = () => {
 
 }
 
-viewHome()
-
 const viewMenu = () => {
+    
     console.log('viewMenu')
     contentDiv.innerHTML = ''
     //display
@@ -81,7 +83,9 @@ const viewMenu = () => {
     displayMenu()
 
 }
+
 const viewContact = () => {
+    
     console.log('viewContact')
     contentDiv.innerHTML = ''
     //display
@@ -99,4 +103,9 @@ const viewContact = () => {
     addImage(contactDiv, 8, images[8].type, images[8].name)
 
 }
+
+viewHome()
+
+
+
 
