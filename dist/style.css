@@ -35,28 +35,46 @@
 button{
     text-align: center;
     background-color: rgb(247, 187, 77);
-    border: solid 2px rgb(243, 159, 3);
+    border: solid 4px   rgba(138, 35, 3, 0.685);
     border-radius: 10px;
     margin: 5px;
-    width: 100px;
+    width: 300px;
+    height: 25px;
+    color:  rgba(138, 35, 3, 0.685);
+    font-weight: 900;
 }
 .header{
     font-size: xx-large;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
     text-decoration: underline;
-    color:  black;
+    color:  rgba(138, 35, 3, 0.685);
+    background-color: rgb(247, 187, 77);
+    border: solid 5px   rgba(138, 35, 3, 0.685);
+    border-radius: 10px;
+    padding: 10px;
 }
-.menuHeader,
+.menuHeader{
+    width: 375px;
+    text-align: center;
+    background-color: rgb(247, 187, 77);
+    border: solid 5px rgba(138, 35, 3, 0.685);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    color: rgba(138, 35, 3, 0.685);
+}
 .menuDesc,
 .hoursDiv,
 .descriptionDiv{
     width: 375px;
     text-align: center;
     background-color: rgb(247, 187, 77);
-    border: solid 10px rgb(243, 159, 3);
+    border: solid 5px rgba(138, 35, 3, 0.685);
     border-radius: 10px;
     margin: 5px;
+    padding: 10px;
+
 }
 .menuPrice{
     width: 75px;
@@ -65,17 +83,19 @@ button{
     justify-content: center;
     align-items: center;
     background-color: rgb(247, 187, 77);
-    border: solid 10px rgb(243, 159, 3);
+    border: solid 5px rgba(138, 35, 3, 0.685);
     border-radius: 50%;
     margin: 5px;
+    padding: 10px;
 }
 .contactDiv{
     width: 400px;
     text-align: center;
     background-color: rgb(247, 187, 77);
-    border: solid 10px rgb(243, 159, 3);
+    border: solid 5px rgba(138, 35, 3, 0.685);
     border-radius: 10px;
     margin: 5px;
+    padding: 5px;
 }
 .buttonDiv{
     display: flex;
@@ -96,5 +116,7 @@ button{
     .portrait{
         width: 375px;
     }
-    
+    button{
+        width: 150px;
+    }
 }
