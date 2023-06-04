@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landscape{
+    width: 300px;
+    padding: 5px;
+}
+.portrait{
+    width: 150px;
+    padding: 5px;
+}

@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landscape{
+    width: 300px;
+}
+.portrait{
+    width: 300px;
+}
