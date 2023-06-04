@@ -3,32 +3,98 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+#content{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    background-image: url('./images/hot-dog-seamless-pattern-background.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    font-size: 1rem;
+}
   
 .landscape{
-    width: 300px;
+    width: 800px;
     padding: 5px;
 }
 .portrait{
-    width: 150px;
+    width: 375px;
     padding: 5px;
-}
-
-.flexColumn{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.flexRow{
-    display: flex;
-    flex-wrap: wrap;
-}
-.block{
-    display: block;
-}
-.hide{
-    display: none;
 }
 #ownerInfo{
     display: none;
+}
+.menuDesc{
+    width: 375px;
+    text-align: center;
+}
+button{
+    text-align: center;
+    background-color: rgb(247, 187, 77);
+    border: solid 2px rgb(243, 159, 3);
+    border-radius: 10px;
+    margin: 5px;
+    width: 100px;
+}
+.header{
+    font-size: xx-large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    text-decoration: underline;
+    color:  black;
+}
+.menuHeader,
+.menuDesc,
+.hoursDiv,
+.descriptionDiv{
+    width: 375px;
+    text-align: center;
+    background-color: rgb(247, 187, 77);
+    border: solid 10px rgb(243, 159, 3);
+    border-radius: 10px;
+    margin: 5px;
+}
+.menuPrice{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 187, 77);
+    border: solid 10px rgb(243, 159, 3);
+    border-radius: 50%;
+    margin: 5px;
+}
+.contactDiv{
+    width: 400px;
+    text-align: center;
+    background-color: rgb(247, 187, 77);
+    border: solid 10px rgb(243, 159, 3);
+    border-radius: 10px;
+    margin: 5px;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+}
+.entreDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+    .landscape{
+        width: 490px;
+        padding: 5px;
+    }
+    .portrait{
+        width: 375px;
+    }
+    
 }

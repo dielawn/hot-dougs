@@ -2,7 +2,7 @@ export const menu = [
     {
         name: 'Apple Dog',
         price: '6.99',
-        description: 'We know you already like hotdogs. Do you like apple and peanut butter? Us too! Try our Apple Dog!',
+        description: 'We know you already like hot dogs. Do you like apple and peanut butter? Us too! Try our Apple Dog!',
         type: 'entre',
         id: 'appleDog',
     },
@@ -16,14 +16,14 @@ export const menu = [
     {
         name: 'General Dog',
         price: '4.99',
-        description: 'Hotdog on a bun',
+        description: 'Hot dog on a bun',
         type: 'entre',
         id: 'generalDog',
     },
     {
         name: 'Naked Dog',
         price: '3.99',
-        description: 'Hotdog without a bun',
+        description: 'Hot dog without a bun',
         type: 'entre',    
         id: 'nakedDog',
     },
