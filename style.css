@@ -15,7 +15,6 @@ div {
     width: 150px;
     padding: 5px;
 }
-
 .flexColumn{
     display: flex;
     flex-direction: column;
